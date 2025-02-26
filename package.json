@@ -2,7 +2,7 @@
   "name": "web-learning",
   "version": "1.0.0",
   "description": "Web fundamentals",
-  "main": "array.js",
+  "main": "index.js",
   "scripts": {
   },
   "repository": {
