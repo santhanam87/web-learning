@@ -1,0 +1,18 @@
+{
+  "name": "web-learning",
+  "version": "1.0.0",
+  "description": "Web fundamentals",
+  "main": "array.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santhanam87/web-learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santhanam87/web-learning/issues"
+  },
+  "homepage": "https://github.com/santhanam87/web-learning#readme"
+}
