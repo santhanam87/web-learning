@@ -13,3 +13,5 @@
       return (Math.random(min)*max)
   }
  console.info(mathGame(9090,88990))
+
+ //
