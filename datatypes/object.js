@@ -1,62 +1,42 @@
 
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
-let a = {}
+// // // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+// let a = {}
+//  a["users"] = [
+//      {name:"sam", age:20, locations:["usa","india"], }, 
+//      {name:"shravan", age:11, locations:["usa","india"]},
+//      {name:"shravan", age:11, locations:["usa"]}
+//  ]
 
-/*
-    key
-    value
-    access
-    add/remove/update
-    datastructure
-    methods
-*/
+// let count  = 0
 
-b = [1,2,3]
-
-
-a["users"] = [
-    {name:"sam", age:20, locations:["usa","india"], }, 
-    {name:"shravan", age:11, locations:["usa","india"]},
-    {name:"shravan", age:11, locations:["usa"]}
-]
-
-
-//console.info(a)
-// access users
-// console.info(a["users"])
-// console.info(a["users"][0])
-// console.info(a["users"][0]["name"])
-// console.info(a.users[0].name)
-// console.info(a.users[0].locations[1])
-// console.info("----")
-
-let count  = 0
-
-for(let i = 0; i < a.users.length; i++){
-    const user = a.users[i];
-    const locations = user.locations;
-    count ++
-    for(let locationIndex = 0; locationIndex < locations.length; locationIndex++ ){
-        console.info(locations[locationIndex])
-        count ++
-    }
-    console.info("----")
-}
-
-console.info(count)
-
-var employees = [{name:"", age:38, location:[{city:"", state:"", zip}]}]
-
-// Banking system data structure;
-// Bank has customers, customer -> name : (firstName, lastName), age, location:{city, state, zip}, address: {street, homenumber} (multiple)
-
-const customers = [{name:{firstName:"", lastName:""}, age:10, location:{city:"", state:"", zip:100}, address:[{street:"", houseNumer:""}]}]
-
-// Problem 1: Construct a data strucutre for a restaurant table booking.
-// name{firstName, lastName}, hotelLocation {street, city, state, zip},  age, numberOfGuest, coupon [{couponNumber, couponExpiry}]
-// 3 customer
-// print each customer firstName
-// print each customer each coupon -> couponNumber
-
-
-
+// for(let i = 0; i < a.users.length; i++){
+//     const user = a.users[i];
+//     const locations = user.locations;
+//     count ++
+//     for(let locationIndex = 0; locationIndex < locations.length; locationIndex++ ){
+//         console.info(locations[locationIndex])
+//         count ++
+//     }
+//     console.info("----")
+//}
+// // Problem 1: Construct a data strucutre for a restaurant table booking.
+// // name{firstName, lastName}, hotelLocation {street, city, state, zip},  age, numberOfGuest, coupon [{couponNumber, couponExpiry}]
+// // 3 customer
+// // print each customer -> firstName
+// // print each customer each coupon -> couponNumber
+// // done comment custemer value is not incresing.Why? 
+    var hotel = 
+    [{name:[{firstname:"Lavanay" ,lastname:"Manohran"}], hotelLocation :[{street:"holly street", city:"Denver", state:"CO", zip:"325545"}],  age:"38", numberOfGuest:"3", coupon : [{couponNumber:"1", couponExpiry:"8/19"} ] }, 
+     {name:[{firstname:"Santhanam" ,lastname:"Eilumali"}], hotelLocation :[{street:"holly street", city:"Denver", state:"CO", zip:"325545"}],  age:"38", numberOfGuest:"3", coupon : [{couponNumber:"2", couponExpiry:"6/7"} ] },
+     {name:[{firstname:"Shakunth" ,lastname:"Santhanam"}], hotelLocation :[{street:"holly street", city:"Denver", state:"CO", zip:"234345"}],  age:"5", numberOfGuest:"3", coupon : [{couponNumber:"3", couponExpiry:"2/9"} ] }];
+    
+     for(var hotelBooking = 0;hotelBooking < hotel.length; hotelBooking++ ){
+        var hotelCostemerInfo = hotel[hotelBooking]
+        for(var customer = 0;customer<hotel[hotelBooking].name.length;customer=customer+1){
+            console.info(hotel[hotelBooking].name[0].firstname,
+                hotel[hotelBooking].coupon[0].couponNumber
+            )
+            
+        }
+        console.info("---------")
+     }
