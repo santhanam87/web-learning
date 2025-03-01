@@ -41,16 +41,195 @@
     //      }
         // console.info(couponinfo)
 
-    hotel[0].coupon[0].couponNumber
-    for(var hotelIndex = 0;hotelIndex<hotel.length;hotelIndex++){
-        const coupons = hotel[hotelIndex].coupon;
-        console.info(hotel[hotelIndex].name.firstname)
-        for(var couponIndex = 0;couponIndex<coupons.length;couponIndex++){
-            console.info(coupons[couponIndex].couponNumber);
-            const offers = hotel[hotelIndex].coupon[couponIndex].offers;
-            for(var offerIndex = 0; offerIndex< offers.length;offerIndex++){
-                console.info(offers[offerIndex].offerName)
-            }
+    // hotel[0].coupon[0].couponNumber
+    // for(var hotelIndex = 0;hotelIndex<hotel.length;hotelIndex++){
+    //     const coupons = hotel[hotelIndex].coupon;
+    //     console.info(hotel[hotelIndex].name.firstname)
+    //     for(var couponIndex = 0;couponIndex<coupons.length;couponIndex++){
+    //         console.info(coupons[couponIndex].couponNumber);
+    //         const offers = hotel[hotelIndex].coupon[couponIndex].offers;
+    //         for(var offerIndex = 0; offerIndex< offers.length;offerIndex++){
+    //             console.info(offers[offerIndex].offerName)
+    //         }
+    //     }
+    // }
+
+
+
+const sampleData = [
+    {
+      "_id": "67c269949448594c0c95492a",
+      "tags": [
+        "dolore",
+        "reprehenderit",
+        "sit",
+        "nulla",
+        "mollit",
+        "dolore",
+        "consectetur"
+      ],
+      "friends": [
+        {
+          "id": 0,
+          "name": "Blake Frank",
+          "tags": [
+            "sunt",
+            "pariatur",
+            "laborum",
+            "occaecat",
+            "irure",
+            "ex",
+            "eu"
+          ]
+        },
+        {
+          "id": 1,
+          "name": "Park Martin",
+          "tags": [
+            "exercitation",
+            "proident",
+            "fugiat",
+            "voluptate",
+            "ut",
+            "sunt",
+            "ut"
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Vicki Hardy",
+          "tags": [
+            "officia",
+            "labore",
+            "minim",
+            "do",
+            "consequat",
+            "minim",
+            "consequat"
+          ]
         }
-        
+      ],
+      "greeting": "Hello, undefined! You have 6 unread messages.",
+      "favoriteFruit": "strawberry"
+    },
+    {
+      "_id": "67c269945650e0bf52794e58",
+      "tags": [
+        "sunt",
+        "qui",
+        "dolor",
+        "aliquip",
+        "officia",
+        "cupidatat",
+        "ipsum"
+      ],
+      "friends": [
+        {
+          "id": 0,
+          "name": "Burt Pacheco",
+          "tags": [
+            "occaecat",
+            "sint",
+            "ex",
+            "qui",
+            "magna",
+            "officia",
+            "esse"
+          ]
+        },
+        {
+          "id": 1,
+          "name": "Sheena Payne",
+          "tags": [
+            "deserunt",
+            "aliquip",
+            "consequat",
+            "velit",
+            "irure",
+            "laborum",
+            "commodo"
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Mitchell Vazquez",
+          "tags": [
+            "tempor",
+            "ipsum",
+            "commodo",
+            "occaecat",
+            "commodo",
+            "anim",
+            "aliqua"
+          ]
+        }
+      ],
+      "greeting": "Hello, undefined! You have 9 unread messages.",
+      "favoriteFruit": "strawberry"
+    },
+    {
+      "_id": "67c26994d4c7626f785460a4",
+      "tags": [
+        "aliquip",
+        "proident",
+        "ea",
+        "commodo",
+        "eiusmod",
+        "nisi",
+        "aute"
+      ],
+      "friends": [
+        {
+          "id": 0,
+          "name": "Tiffany Evans",
+          "tags": [
+            "qui",
+            "laboris",
+            "fugiat",
+            "aliqua",
+            "minim",
+            "elit",
+            "velit"
+          ]
+        },
+        {
+          "id": 1,
+          "name": "Ann Livingston",
+          "tags": [
+            "in",
+            "reprehenderit",
+            "reprehenderit",
+            "consectetur",
+            "pariatur",
+            "et",
+            "do"
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Randolph Brooks",
+          "tags": [
+            "enim",
+            "eu",
+            "cillum",
+            "qui",
+            "exercitation",
+            "sit",
+            "commodo"
+          ]
+        }
+      ],
+      "greeting": "Hello, undefined! You have 6 unread messages.",
+      "favoriteFruit": "banana"
     }
+  ]
+  for(var sampleDataIndex = 0;sampleDataIndex<sampleData.length;sampleDataIndex++){
+    var friends = sampleData[sampleDataIndex].friends 
+    for(var nameIndex = 0;nameIndex<friends.length;nameIndex++){
+    console.info(friends[nameIndex].name,)
+    var tags = friends[nameIndex].tags
+       for(var tagsIndex = 0;tagsIndex<tags.length;tagsIndex++){
+        console.info(tags[tagsIndex])
+       } 
+    }
+  }
