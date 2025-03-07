@@ -226,11 +226,17 @@ const sampleData = [
   for(var sampleDataIndex = 0;sampleDataIndex<sampleData.length;sampleDataIndex++){
     var friends = sampleData[sampleDataIndex].friends 
     for(var nameIndex = 0;nameIndex<friends.length;nameIndex++){
+    console.info("_________")
     console.info(friends[nameIndex].name,)
+    console.info("_________")
     var tags = friends[nameIndex].tags
        for(var tagsIndex = 0;tagsIndex<tags.length;tagsIndex++){
         console.info(tags[tagsIndex])
-       } 
+        var favFruit = sampleData[tagsIndex]
+      } 
     }
-  } 
-  // I did some expiramenting, then I deleted them.
+  
+  for(var favoriteFruitIndex = 0;favoriteFruitIndex<sampleData.length;favoriteFruitIndex++){
+    console.info("_________")
+    console.info(sampleData[favoriteFruitIndex].favoriteFruit,)
+  }  }
