@@ -3,7 +3,9 @@
 1.  **Looping and Summing:**
 
     - Write a `for` loop that iterates from 1 to 10 and calculates the sum of all numbers in that range.
-    - Print the final sum to the console.
+    - Print the final sum to the console.DONE
+
+---
 
 2.  **Conditional Check (Even/Odd):**
 
