@@ -35,9 +35,6 @@ console.info(typeof degress);
 console.info(typeof undefined);
 console.info(employee1);
 console.info(employees);
-
-console.info("----------------");
-console.info("Hi Anna I had given you a pull request(PR)!!");
 console.info("----------------");
 
 // College
