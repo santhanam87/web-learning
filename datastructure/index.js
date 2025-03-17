@@ -80,8 +80,6 @@ let deprtment = { departmentName, location, headOfDepartment };
  * Zip
  */
 
-// TODO
-
 let collegeLocation = {};
 
 let college = {
@@ -93,15 +91,3 @@ let college = {
 };
 
 console.info(college);
-
-// TODO: Banking
-/**
- * Build a datascrture for a banking system, with the following information bankName, managerName, locations (city, state, zip, locationId),
- * employees - employeeName (firstName, LastName), designation, yearOfExp, locationId
- */
-
-// TODO: Narato
-
-/**
- * characterName, age, gender, powers [ power () ], village, enimies [ enimy (name, age, genger, powers)]
- */
