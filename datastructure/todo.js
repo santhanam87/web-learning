@@ -41,9 +41,44 @@ var banks = [
     ],
   },
 ];
-console.info(JSON.stringify(banks));
+//console.info(JSON.stringify(banks));
 // TODO: Narato
 //WHY NARRATO WHY???!!!
 /**
  * characterName, age, gender, powers [ power () ], village, enimies [ enimy (name, age, genger, powers)]
  */
+var characterInfo = [
+  {
+    characterName: "Narato",
+    age: "11",
+    gender: "male",
+    powers: [{ power: "Rasengan" }, { power: "multishadoclone jitu" }],
+    enimies: [
+      {
+        enimy: {
+          name: "Saska",
+          age: "11",
+          genger: "male",
+          powers: [{ power: "sharingan" }, { power: "tigusu" }],
+        },
+      },
+    ],
+  },
+  {
+    characterName: "Saska",
+    age: "11",
+    gender: "male",
+    powers: [{ power: "sharingan" }, { power: "tijusu" }],
+    enimies: [
+      {
+        enimy: {
+          name: "Narato",
+          age: "11",
+          genger: "male",
+          powers: [{ power: "sharingan" }, { power: "multishadoclone jitu" }],
+        },
+      },
+    ],
+  },
+];
+console.info(JSON.stringify(characterInfo));
