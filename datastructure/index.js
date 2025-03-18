@@ -72,7 +72,7 @@ let headOfDepartment = "Doe";
 let deprtment = { departmentName, location, headOfDepartment };
 
 /**
- * Stree,
+ * Street,
  * City,
  * Phone
  * State
@@ -80,10 +80,7 @@ let deprtment = { departmentName, location, headOfDepartment };
  * Zip
  */
 
-// TODO
-
 let collegeLocation = {};
-
 let college = {
   princi,
   vicePrinci,
@@ -91,15 +88,11 @@ let college = {
   departments: [deprtment],
   teachers: [teacher],
 };
-
 console.info(college);
-
 // TODO: Banking
 /**
  * Build a datascrture for a banking system, with the following information bankName, managerName, locations (city, state, zip, locationId),
  * employees - employeeName (firstName, LastName), designation, yearOfExp, locationId
- */
-
 // TODO: Narato
 
 /**
