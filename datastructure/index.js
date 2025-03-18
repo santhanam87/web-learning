@@ -79,8 +79,13 @@ let deprtment = { departmentName, location, headOfDepartment };
  * Email
  * Zip
  */
-
-let collegeLocation = {};
+let streetName = "Hakeem street";
+let city = "Melvisharam";
+let Phone = "8546958425";
+let State = "Tamil Nadu";
+let Email = "cahcet@gmail.in";
+let Zip = "634001"
+let collegeLocation = { streetName, city, Phone, State, Email, Zip};
 
 let college = {
   princi,
